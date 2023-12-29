@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--black-gradient: linear-gradient(
+		144.39deg,
+		#ffffff -278.56%,
+		#6d6d6d -78.47%,
+		#11101d 91.61%
+	);
+	--card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+.text-gradient {
+	background: radial-gradient(
+		64.18% 64.18% at 71.16% 35.69%,
+		#def9fa 0.89%,
+		#bef3f5 17.23%,
+		#9dedf0 42.04%,
+		#7de7eb 55.12%,
+		#5ce1e6 71.54%,
+		#33bbcf 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+	background: radial-gradient(
+		64.18% 64.18% at 71.16% 35.69%,
+		#7de7eb 0.89%,
+		#5ce1e6 17.23%,
+		#33bbcf 42.04%,
+		#20b3b8 55.12%,
+		#5ce1e6 71.54%,
+		#33bbcf 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.bg-blue-gradient {
+	background: linear-gradient(
+		157.81deg,
+		#def9fa -43.27%,
+		#bef3f5 -21.24%,
+		#9dedf0 12.19%,
+		#7de7eb 29.82%,
+		#5ce1e6 51.94%,
+		#33bbcf 90.29%
+	);
+}
+
+.bg-black-gradient {
+	background: linear-gradient(
+		144.39deg,
+		#ffffff -278.56%,
+		#6d6d6d -78.47%,
+		#11101d 91.61%
+	);
+}
+
+.bg-black-gradient-2 {
+	background: linear-gradient(
+		-168.39deg,
+		#ffffff -278.56%,
+		#6d6d6d -78.47%,
+		#11101d 91.61%
+	);
+}
+
+.bg-gray-gradient {
+	background: linear-gradient(
+		153.47deg,
+		rgba(255, 255, 255, 0) -341.94%,
+		#14101d 95.11%
+	);
+}
+
+.bg-discount-gradient {
+	background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+	box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+	0% {
+		-webkit-transform: translateY(100px);
+		transform: translateY(100px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes slide-top {
+	0% {
+		-webkit-transform: translateY(100px);
+		transform: translateY(100px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+.feature-card:hover {
+	background: var(--black-gradient);
+	box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+	margin-right: 0px;
+}
+
+.feedback-card {
+	background: transparent;
+}
+
+.feedback-card:hover {
+	background: var(--black-gradient);
+}
+
+.blue__gradient {
+	background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+	filter: blur(123px);
+}
+
+.pink__gradient {
+	background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+	filter: blur(900px);
+}
+
+.white__gradient {
+	background: rgba(255, 255, 255, 0.6);
+	filter: blur(750px);
+}
+
+.gelatine {
+	transition-property: all;
+	transition-duration: 1s;
+}
+
+.gelatine:hover {
+	transition-property: all;
+	transition-duration: 1s;
+	animation: gelatine 0.5s infinite;
+}
+@keyframes gelatine {
+	from,
+	to {
+		transform: scale(1, 1);
+	}
+	25% {
+		transform: scale(1.1, 0.9);
+	}
+	50% {
+		transform: scale(0.9, 1.1);
+	}
+	75% {
+		transform: scale(1.05, 0.95);
+	}
+}
+
+.phone {
+	position: relative;
+}
+
+.phone > div {
+	position: absolute;
+}
+
+.shine {
+	-webkit-mask-image: linear-gradient(
+		-25deg,
+		rgba(0, 0, 0, 1) 30%,
+		#000 50%,
+		rgba(0, 0, 0, 0.8) 70%
+	);
+	-webkit-mask-size: 200%;
+	animation: shine 5s infinite;
+	cursor: pointer;
+}
+
+@keyframes shine {
+	from {
+		-webkit-mask-position: 150%;
+	}
+
+	to {
+		-webkit-mask-position: -50%;
+	}
+}
+
+.shine2 {
+	-webkit-mask-image: linear-gradient(
+		-25deg,
+		rgba(0, 0, 0, 1) 30%,
+		#000 50%,
+		rgba(0, 0, 0, 0.1) 70%
+	);
+	-webkit-mask-size: 1500%;
+	animation: shine2 5s infinite;
+	cursor: pointer;
+	font-size: 8rem;
+}
+
+@keyframes shine2 {
+	from {
+		-webkit-mask-position: 300%;
+	}
+
+	to {
+		-webkit-mask-position: 100%;
+	}
+}
+
+.main-bg {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1087%26quot%3b)' fill='none'%3e%3cpath d='M1082.738%2c477.12C1122.063%2c476.934%2c1149.249%2c443.159%2c1169.595%2c409.507C1190.947%2c374.191%2c1211.918%2c332.419%2c1192.116%2c296.211C1171.807%2c259.076%2c1125.064%2c250.807%2c1082.738%2c250.687C1040.141%2c250.567%2c992.9%2c258.314%2c972.285%2c295.59C952.079%2c332.127%2c972.743%2c374.668%2c994.446%2c410.336C1015.005%2c444.124%2c1043.187%2c477.307%2c1082.738%2c477.12' fill='rgba(142%2c 28%2c 134%2c 0.18)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1374.442%2c397.548C1390.715%2c398.288%2c1409.592%2c399.847%2c1418.627%2c386.292C1428.278%2c371.813%2c1423.987%2c352.223%2c1414.282%2c337.78C1405.632%2c324.906%2c1389.951%2c320.718%2c1374.442%2c320.532C1358.507%2c320.341%2c1341.19%2c323.188%2c1332.909%2c336.803C1324.383%2c350.82%2c1327.449%2c369.024%2c1336.709%2c382.567C1344.895%2c394.54%2c1359.953%2c396.889%2c1374.442%2c397.548' fill='rgba(142%2c 28%2c 134%2c 0.18)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M778.559%2c462.524C802.087%2c462.042%2c817.232%2c440.432%2c828.821%2c419.95C840.173%2c399.888%2c849.308%2c376.672%2c838.724%2c356.195C827.428%2c334.342%2c803.088%2c320.839%2c778.559%2c322.708C756.432%2c324.394%2c743.01%2c344.791%2c732.421%2c364.293C722.479%2c382.603%2c715.743%2c403.226%2c724.601%2c422.084C734.843%2c443.89%2c754.473%2c463.017%2c778.559%2c462.524' fill='rgba(142%2c 28%2c 134%2c 0.18)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1428.186%2c659.074C1475.124%2c657.85%2c1514.577%2c629.663%2c1540.184%2c590.306C1568.912%2c546.152%2c1592.596%2c491.533%2c1567.234%2c445.364C1541.256%2c398.074%2c1481.928%2c381.639%2c1428.186%2c386.425C1382.002%2c390.538%2c1349.682%2c426.779%2c1326.305%2c466.822C1302.664%2c507.317%2c1283.631%2c554.992%2c1305.588%2c596.425C1328.62%2c639.886%2c1379.016%2c660.357%2c1428.186%2c659.074' fill='rgba(142%2c 28%2c 134%2c 0.18)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M54.671%2c219.897C89.665%2c220.313%2c124.871%2c206.362%2c142.225%2c175.972C159.459%2c145.793%2c152.612%2c109.005%2c135.155%2c78.955C117.792%2c49.065%2c89.232%2c24.601%2c54.671%2c25.256C20.992%2c25.895%2c-4.121%2c52.584%2c-20.694%2c81.91C-36.94%2c110.658%2c-45.176%2c144.952%2c-29.348%2c173.932C-12.947%2c203.961%2c20.457%2c219.49%2c54.671%2c219.897' fill='rgba(142%2c 28%2c 134%2c 0.18)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M421.854%2c345.968C469.264%2c343.976%2c515.016%2c325.358%2c539.797%2c284.891C565.696%2c242.598%2c566.814%2c190.295%2c544.22%2c146.148C519.33%2c97.514%2c476.453%2c56.359%2c421.854%2c54.438C364.366%2c52.416%2c311.938%2c86.917%2c283.608%2c136.981C255.7%2c186.298%2c254.134%2c248.319%2c285.397%2c295.58C314.069%2c338.924%2c369.931%2c348.15%2c421.854%2c345.968' fill='rgba(142%2c 28%2c 134%2c 0.18)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M122.666%2c595.883C172.548%2c598.077%2c211.273%2c557.66%2c236.214%2c514.406C261.126%2c471.202%2c277.052%2c417.213%2c249.76%2c375.471C224.001%2c336.074%2c169.694%2c338.728%2c122.666%2c340.742C80.414%2c342.551%2c34.693%2c349.227%2c13.123%2c385.604C-8.766%2c422.519%2c5.368%2c467.061%2c25.196%2c505.123C47.179%2c547.322%2c75.13%2c593.792%2c122.666%2c595.883' fill='rgba(142%2c 28%2c 134%2c 0.18)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M179.725%2c462.245C219.436%2c461.431%2c250.015%2c429.619%2c267.425%2c393.919C282.695%2c362.609%2c277.523%2c327.042%2c260.478%2c296.662C242.989%2c265.49%2c215.462%2c238.236%2c179.725%2c237.604C143.088%2c236.957%2c112.453%2c262.136%2c93.872%2c293.718C74.984%2c325.823%2c68.657%2c364.459%2c85.565%2c397.649C104.083%2c433.999%2c138.939%2c463.081%2c179.725%2c462.245' fill='rgba(142%2c 28%2c 134%2c 0.18)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1270.474%2c326.579C1318.46%2c329.238%2c1370.281%2c319.826%2c1396.509%2c279.554C1424.771%2c236.158%2c1423.254%2c178.325%2c1395.499%2c134.604C1369.453%2c93.576%2c1319.066%2c81.687%2c1270.474%2c81.018C1220.332%2c80.328%2c1163.828%2c87.315%2c1139.34%2c131.077C1115.19%2c174.235%2c1138.961%2c225.74%2c1166.51%2c266.811C1190.376%2c302.391%2c1227.697%2c324.209%2c1270.474%2c326.579' fill='rgba(142%2c 28%2c 134%2c 0.18)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M542.177%2c44.784C560.228%2c44.662%2c576.361%2c34.386%2c585.531%2c18.838C594.859%2c3.021%2c597.789%2c-17.128%2c587.762%2c-32.511C578.39%2c-46.889%2c559.334%2c-48.13%2c542.177%2c-47.673C526.074%2c-47.244%2c509.502%2c-43.623%2c500.616%2c-30.187C490.821%2c-15.377%2c489.186%2c3.903%2c497.795%2c19.432C506.649%2c35.403%2c523.916%2c44.907%2c542.177%2c44.784' fill='rgba(142%2c 28%2c 134%2c 0.18)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1087'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+.bounce2 {
+	animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
+}
+
+.mainView {
+	min-height: 10px;
+}
+
+main {
+	height: 100vh;
+}
+
+.banner {
+	height: 100vh;
+	background: #bbe8f6;
+}
+
+.text {
+	position: relative;
+	color: #000;
+	font-weight: 900;
+	font-family: "futura-pt", futura, sans-serif;
+	font-size: 2rem;
+	line-height: 0.7;
+	white-space: nowrap;
+}
+
+.shapes {
+	background-image: url("https://images.unsplash.com/photo-1668977309586-50c338c48cf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+}
+
+#scrollBox {
+	overflow-y: scroll;
+}
+
+.elastic-spin {
+	animation: elastic-spin 1s infinite ease;
+}
+@keyframes elastic-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(720deg);
+	}
+}
+
+.bounce {
+	animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+	70% {
+		transform: translateY(0%);
+	}
+	80% {
+		transform: translateY(-15%);
+	}
+	90% {
+		transform: translateY(0%);
+	}
+	95% {
+		transform: translateY(-7%);
+	}
+	97% {
+		transform: translateY(0%);
+	}
+	99% {
+		transform: translateY(-3%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.spin:hover {
+	animation: spin 1s infinite linear;
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.hithere:hover {
+	animation: hithere 1s ease infinite;
+}
+@keyframes hithere {
+	30% {
+		transform: scale(1.2);
+	}
+	40%,
+	60% {
+		transform: rotate(-20deg) scale(1.2);
+	}
+	50% {
+		transform: rotate(20deg) scale(1.2);
+	}
+	70% {
+		transform: rotate(0deg) scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.smallText {
+	font-size: 0.6rem;
+}
+
+.react-pdf__Document {
+	display: inline-block;
+}
+
+.react-pdf__Page {
+	width: 400px;
+	height: 524px;
+}
+
+.react-pdf__Page__textContent {
+	display: none !important;
+}
+
+
+@media only screen and (min-width: 600px) {
+	.react-pdf__Page__canvas {
+		box-shadow: 1px 1px 3px 3px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.react-pdf__Page__canvas {
+		padding-left: 7rem;
+		padding-right: 7rem;
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+		background-color: antiquewhite;
+		top: -10rem;
+		position: absolute;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.react-pdf__Page__canvas {
+		padding-left: 8rem;
+		padding-right: 8rem;
+	}
+}
